@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer components {
+  .header-accordion.active img {
+    @apply bg-[url('../assets/images/icon-minus.svg')];
+  }
+  .body-accodion {
+    @apply max-h-0 overflow-hidden transition-all duration-200 ease-out;
+  }
+} */
+/* .acc-body {
+  @apply overflow-hidden;
+} */
+.acc-item.close .acc-body {
+  @apply max-h-0;
+}
+
+.acc-item.open .acc-body {
+  @apply max-h-fit py-3;
+}
+.acc-item.open .acc-header img {
+  @apply content-[url('../assets/images/icon-minus.svg')];
+}
